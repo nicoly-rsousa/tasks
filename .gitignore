@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# backend build
+dist/
+*.tsbuildinfo
+
+# frontend (Next.js)
+api-tasks-front/.next/
+api-tasks-front/out/
+api-tasks-front/build/
+api-tasks-front/next-env.d.ts
+
+# env files
+.env
+.env.local
+.env.*.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor / OS
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+*.pem
+
+# testing / coverage
+coverage/
+
+# vercel
+.vercel

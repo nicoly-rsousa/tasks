@@ -1,0 +1,32 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "display": "Node 22",
+  "_version": "22.0.0",
+  "compilerOptions": {
+    "lib": [
+      "es2023",
+      "esnext.array",
+      "esnext.collection",
+      "esnext.iterator"
+    ],
+    "module": "commonjs",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "esm": false,
+    "transpileOnly": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "api-tasks-front", "dist"]
+}
+
+
+

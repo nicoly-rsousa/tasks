@@ -1,0 +1,38 @@
+@BASE_URL = http://localhost:5000
+
+# @name Create a new task
+POST {{BASE_URL}}/task
+Content-Type: application/json
+
+{
+    "title": "Estudar HTML, CSS e JS",
+    "description": "Estudar os cenários das tags em HTML, CSS e JS",
+    "statusId": 1,
+    "priorityId": 2,
+    "categoryId": 1
+}
+
+###
+
+# @name List all tasks
+GET {{BASE_URL}}/task
+
+###
+
+# @name Get one task
+GET {{BASE_URL}}/task/1
+
+###
+
+# @name Update a task
+PATCH {{BASE_URL}}/task/1
+Content-Type: application/json
+
+{
+    "statusId": 2
+}
+
+###
+
+# @name Delete a task
+DELETE {{BASE_URL}}/task/1
